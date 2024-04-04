@@ -1,0 +1,42 @@
+.div_componentes{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 10rem 1fr;
+    gap: 1rem;
+}
+.titulo{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin: auto;
+}
+.texto{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 1.5rem;
+}
+.btn{
+    width: 7rem;
+    height: 3rem;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.quitar_bordr{
+    border-radius: 0;
+    animation-duration: 5s;
+}
